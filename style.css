@@ -1,0 +1,108 @@
+body {
+  box-sizing: border-box;
+  background-color: lightgoldenrodyellow;
+}
+@font-face {
+  font-family: "Astronaut";
+  src: url("./ASTRONAU.TTF")
+}
+button {
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 5px;
+  min-width: 100px
+}
+input {
+  margin: 5px;
+  border-radius: 3px;
+}
+.master-grid {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  max-width: 600px;
+}
+.header{
+  grid-template-rows: 1;
+  display: flex;
+  justify-content: center;
+}
+.message-board-container {
+  background-color: rgb(255,204,102);
+  grid-row: 3;
+  grid-column: 1;
+  border-radius: 5px;
+}
+.name-field {
+  border-radius: 3px;
+}
+.message-board {
+  display: grid;
+  grid-column: 1 / 2;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+#message-board-label {
+  font-family: sans-serif;
+  font-size: medium;
+}
+#message-board-screen {
+  margin-top:5px;
+  background-color: black;
+  grid-column: 1 / 2;
+}
+#message-board-message {
+  font-family: "Astronaut";
+  font-size: xx-large;
+  color: rgb(0,222,0);
+  margin: 5px;
+}
+#message-board-form {
+  grid-column: 1;
+  font-family: sans-serif;
+  display: grid;
+  align-items: flex-end;
+}
+#message-board-save {
+  grid-column: 1;
+  grid-row: 4;
+}
+#message-board-buttons {
+  grid-column: 1;
+  grid-row: 5;
+}
+.message-board ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#message-board-form li,
+#message-board-buttons li {
+  margin: 0 5px;
+}
+#message-board-buttons button {
+  min-width: 100px;
+}
+.board-container {
+  grid-row: 2;
+  margin: 5vh 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10vh 10vh 10vh;
+  grid-gap: 8px;
+  background-color: darkgray;
+}
+.board-square {
+  height: 100%;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  font-family: 'Cedarville Cursive', cursive;
+  line-height: 10vh;
+  font-size: 4rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
