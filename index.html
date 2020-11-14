@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CodingCop's Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<body>
+  <div class="master-grid">
+    <div class="header" id="message-board-label">
+      <p><a href="https://codingcop.com" target="_blank">CodingCop's</a> Tic-tac-toe</p>
+    </div>
+    <div class="message-board-container">
+      <div class="message-board" id="message-board-screen">
+        <div class="message-board" id="message-board-message"></div>
+      </div>
+      <div class="message-board" id="message-board-form">
+        <ul>
+          <li>X's Name: <input class="name-field" type="text" name="name" id="playerX" size="10"/><span id="xName" class="name-static"></span></li>
+          <li>O's Name: <input class="name-field" type="text" name="name" id="playerO" size="10"/><span id="oName" class="name-static"></span></li>
+        </ul>
+      </div>
+      <div class="message-board" id="message-board-save">
+        <ul>
+          <li><button id="save-names">Save Names</button></li>
+        </ul>
+      </div>
+      <div class="message-board" id="message-board-buttons">
+        <ul>
+          <li><button id="reset-board">Reset Board</button></li>
+          <li><button id="clear-names">Clear Names</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="board-container">
+      <div class="board-square" id="0"></div>
+      <div class="board-square" id="1"></div>
+      <div class="board-square" id="2"></div>
+      <div class="board-square" id="3"></div>
+      <div class="board-square" id="4"></div>
+      <div class="board-square" id="5"></div>
+      <div class="board-square" id="6"></div>
+      <div class="board-square" id="7"></div>
+      <div class="board-square" id="8"></div>
+    </div>
+  </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
